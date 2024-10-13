@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Fancy Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Your Profile</h2>
+            <form id="profileForm" onsubmit="updateProfile(event)">
+                <label for="profileUsername">Username:</label>
+                <input type="text" id="profileUsername" required><br><br>
+
+                <label for="profilePassword">Password:</label>
+                <input type="password" id="profilePassword" required><br><br>
+
+                <button type="submit">Update Profile</button>
+            </form>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>
